@@ -1,6 +1,6 @@
 #!/usr/bin/bas
 REM 9x9 multiplication table in BASIC
-REM CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018
+REM CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 REM bas mt9x9.bas || ( chmod +x mt9x9.bas ; ./mt9x9.bas )
 
 FOR I = 1 TO 9 STEP 3

@@ -1,5 +1,5 @@
 // 9x9 multiplication table in C++
-// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018
+// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 // g++ mt9x9.cpp -o mt9x9 ; ./mt9x9
 
 #include <iostream>

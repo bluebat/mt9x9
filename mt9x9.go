@@ -1,5 +1,5 @@
 // 9x9 multiplication table in Go
-// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018
+// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 // go run mt9x9.go || ( go build mt9x9.go ; ./mt9x9 )
 
 package main

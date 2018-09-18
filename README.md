@@ -4,8 +4,7 @@ Multiplication Table from 1x1 to 9x9 in various programming languages
 
 Guidelines
 ----------
-* Optional shebang line
-* Copyleft declaration
+* Possible shebang line
 * Executing command examples
 * Using 2 for/foreach and 1 map/foreach/for loops
 

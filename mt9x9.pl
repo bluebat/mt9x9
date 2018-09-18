@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # 9x9 multiplication table in Perl
-# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 # perl mt9x9.pl || ( chmod +x mt9x9.pl ; ./mt9x9.pl )
 
 for (my $i = 1; $i <=9; $i += 3) {
