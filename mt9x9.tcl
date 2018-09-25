@@ -6,7 +6,9 @@
 for {set i 1} {$i <= 9} {incr i 3} {
     for {set j 1} {$j <= 9} {incr j} {
         for {set k $i} {$k < $i+3} {incr k} {
-            puts -nonewline [format "%dx%d=%2d\t" $k $j [expr {$k*$j}]]
+            puts -nonewline [
+                format "%dx%d=%2d\t" $k $j [expr {$k*$j}]
+            ]
         }
         puts ""
     }
