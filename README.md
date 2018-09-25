@@ -39,3 +39,7 @@ Output
 	7x7=49	8x7=56	9x7=63	
 	7x8=56	8x8=64	9x8=72	
 	7x9=63	8x9=72	9x9=81	
+
+Reference
+---------
+* [Multiplication tables in Rosetta Code](https://www.rosettacode.org/wiki/Multiplication_tables)
