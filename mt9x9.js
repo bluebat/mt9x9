@@ -6,7 +6,9 @@
 for(var i=1; i<=9; i+=3) {
     for(var j=1; j<=9; j++)
         print(
-            [i,i+1,i+2].map(k => k+'x'+j+'='+(' '+k*j).slice(-2)).join('\t')
+            [i,i+1,i+2].map(
+                k => k+'x'+j+'='+(' '+k*j).slice(-2)
+            ).join('\t')
         )
     print()
 }
