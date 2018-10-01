@@ -14,6 +14,4 @@
         loop
         cr
     3 +loop ;
-
-mt9x9
-bye
+mt9x9 bye
