@@ -5,9 +5,9 @@
 package main
 import "fmt"
 func main() {
-    for i:=1; i<=9; i+=3 {
-        for j:=1; j<=9; j++ {
-            for k:=i; k<i+3; k++ {
+    for i := 1; i <= 9; i += 3 {
+        for j := 1; j <= 9; j++ {
+            for k := i; k < i+3; k++ {
                 fmt.Printf("%dx%d=%2d\t", k, j, k*j)
             }
             println()
