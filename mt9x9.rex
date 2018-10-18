@@ -1,5 +1,5 @@
 #!/usr/bin/rexx
--- 9x9 multiplication table in Rexx
+-- 9x9 multiplication table in REXX
 -- CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 -- rexx mt9x9.rex || ( chmod +x mt9x9.rex ; ./mt9x9.rex )
 
