@@ -6,7 +6,7 @@
 loop i = 1 to 9 by 3
     loop j = 1 to 9
         loop k = i to i+2
-            call charout, k"x"j"="format(k*j, 2)"09"x
+            .output~charout(k"x"j"="format(k*j, 2)"09"x)
         end
         say
     end
