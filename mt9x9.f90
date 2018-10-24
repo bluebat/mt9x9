@@ -5,7 +5,7 @@
 program mt9x9
     implicit none
     integer :: i, j, k
-    character(len=25) :: format
+    character(len=24) :: format
     do i = 1, 9, 3
     format = "(3(i1, a, i1, a, i2, a))"
     write(*,format) ((k, 'x', j, '=', k*j, char(9), k = i, i+2), j = 1, 9)
