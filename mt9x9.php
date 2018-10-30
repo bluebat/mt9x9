@@ -9,7 +9,7 @@
             for($k = $i; $k < $i+3; $k++) {
                 printf("%dx%d=%2d\t", $k, $j, $k*$j);
             }
-            echo "\n";
+            printf("\n");
         }
         echo "\n";
     }

@@ -9,7 +9,7 @@ public class mt9x9 {
             for(j = 1; j <= 9; j++) {
                 for(k = i; k < i+3; k++)
                     System.out.printf("%dx%d=%2d\t", k, j, k*j);
-                System.out.println();
+                System.out.printf("\n");
             }
             System.out.println();
         }

@@ -8,7 +8,7 @@ for (my $i = 1; $i <= 9; $i += 3) {
         foreach my $k ($i..$i+2) {
             printf("%dx%d=%2d\t", $k, $j, $k*$j);
         }
-        print "\n";
+        printf("\n");
     }
     print "\n";
 }

@@ -17,7 +17,7 @@ BEGIN
                 InOut.WriteInt(k*j, 2);
                 InOut.Write(11C);
             END;
-            InOut.WriteLn;
+            InOut.Write(12C);
         END;
         InOut.WriteLn;
     END;

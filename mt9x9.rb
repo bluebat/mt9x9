@@ -8,7 +8,7 @@ for i in (1..9).step(3)
         (i..i+2).each{|k|
             print "%dx%d=%2d\t" % [k, j, k*j]
         }
-        puts
+        print "\n"
     end
     puts
 end

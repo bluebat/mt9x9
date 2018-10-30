@@ -8,7 +8,7 @@ loop i = 1 to 9 by 3
         loop k = i to i+2
             .output~charout(k"x"j"="format(k*j, 2)"09"x)
         end
-        say
+        .output~charout("0a"x)
     end
     say
 end

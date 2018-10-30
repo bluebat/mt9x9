@@ -8,7 +8,7 @@ fn main() {
             for k in i..i+3 {
                 print!("{}x{}={:2}\t", k, j, k*j);
             }
-            println!();
+            print!("\n");
         }
         println!();
     }

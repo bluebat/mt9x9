@@ -9,7 +9,7 @@ foreach i [1 4 7] [
         for k i (i + 2) 1 [
             prin rejoin [k "x" j "=" either k * j < 10 [" "] [""] k * j tab]
         ]
-        print ""
+        prin crlf
     ]
     print ""
 ]

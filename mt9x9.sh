@@ -8,7 +8,7 @@ for i in {1..9..3}; do
         for k in $i $((i+1)) $((i+2)); do
             printf '%dx%d=%2d\t' $k $j $((k*j))
         done
-        echo
+        printf '\n'
     done
     echo
 done

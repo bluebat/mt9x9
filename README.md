@@ -6,7 +6,8 @@ Guidelines
 ----------
 * Possible shebang line
 * Executing command examples
-* Using 2 for/foreach and 1 map/foreach/for loops
+* Possible 3 for/foreach/map loops
+* Possible 3 output directives
 
 Output
 ------

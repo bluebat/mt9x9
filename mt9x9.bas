@@ -8,7 +8,7 @@ for i = 1 to 9 step 3
         for k = i to i+2
             print using "#x#=##"+chr$(9); k, j, k*j;
         next k
-        print
+        print chr$(10);
     next j
     print
 next i

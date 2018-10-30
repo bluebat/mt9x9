@@ -8,7 +8,7 @@ for i = 1,9,3 do
         for k = i,i+2 do
             io.write(string.format('%dx%d=%2d\t', k, j, k*j))
         end
-        print()
+        io.write('\n')
     end
     print()
 end

@@ -15,7 +15,7 @@ begin
             begin
                 Write(Format('%dx%d=%2d'#9, [k, j, k*j]));
             end;
-            Writeln;
+            Write(#10);
         end;
         Writeln;
     end;

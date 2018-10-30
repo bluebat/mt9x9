@@ -10,7 +10,7 @@ func main() {
             for k := i; k < i+3; k++ {
                 fmt.Printf("%dx%d=%2d\t", k, j, k*j)
             }
-            println()
+            fmt.Printf("\n")
         }
         println()
     }

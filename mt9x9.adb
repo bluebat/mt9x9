@@ -13,7 +13,7 @@ begin
                 Put (k, Width => 1); Put ("x"); Put (j, Width => 1);
                 Put ("="); Put (k*j, Width => 2); Put (ASCII.HT);
             end loop;
-            New_Line;
+            Put (ASCII.LF);
         end loop;
         New_Line;
     end loop;

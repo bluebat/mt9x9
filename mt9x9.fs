@@ -10,7 +10,7 @@
                 j 1 u.r 61 emit
                 i k + j * 2 u.r 9 emit
             loop
-            cr
+            10 emit
         loop
         cr
     3 +loop ;
