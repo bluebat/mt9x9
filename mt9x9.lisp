@@ -10,5 +10,5 @@
         )
         (format t "~%")
     )
-    (format t "~%")
+    (terpri)
 )

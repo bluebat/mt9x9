@@ -19,7 +19,7 @@ perform varying i from 0 by 3 until i greater than 8
             multiply k by j giving kj
             display k "x" j "=" kj x"09" with no advancing
         end-perform
-        display x"00"
+        display x"0a" with no advancing
     end-perform
     display x"00"
 end-perform
