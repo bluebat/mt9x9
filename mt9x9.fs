@@ -1,6 +1,7 @@
+#! /usr/bin/gforth
 \ 9x9 multiplication table in Forth
 \ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
-\ gforth mt9x9.fs
+\ gforth mt9x9.fs || ( chmod +x mt9x9.fs ; ./mt9x9.fs )
 
 : mt9x9
     10 1 do

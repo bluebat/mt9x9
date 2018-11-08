@@ -10,7 +10,7 @@ for {set i 1} {$i <= 9} {incr i 3} {
                 format "%dx%d=%2d\t" $k $j [expr {$k*$j}]
             ]
         }
-        puts ""
+        puts -nonewline "\n"
     }
     puts ""
 }
