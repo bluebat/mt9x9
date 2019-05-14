@@ -10,7 +10,7 @@ int main() {
         for(j = 1; j <= 9; j++) {
             for(k = i; k < i+3; k++)
                 printf("%dx%d=%2d\t", k, j, k*j);
-            cout << endl;
+            printf("\n");
         }
         cout << endl;
     }
