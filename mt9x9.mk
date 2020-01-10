@@ -8,8 +8,8 @@ $(foreach i, 1 4 7, \
     $(foreach j, $(call sequence,1,9), \
         $(eval str=) \
         $(foreach k, $i $(call plus,$i,1) $(call plus,$i,2), \
-            $(eval sum=$(call multiply,$k,$j)) \
-            $(eval str=${str}  $kx$j=$(if $(call lt,${sum},10), ,)${sum}) \
+            $(eval n=$(call multiply,$k,$j)) \
+            $(eval str=${str}  $kx$j=$(if $(call lt,$n,10), ,)$n) \
         ) \
         $(info ${str}) \
     ) \
