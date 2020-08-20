@@ -8,18 +8,15 @@ print_segment(I,J,K) :-
         format('%dx%d=%2d\t',[K,J,K*J]),
         K1 is K+1, print_segment(I,J,K1)
     ); format('~n',[]).
-
 print_line(I,J) :-
     J < 10 -> (
         K is I, print_segment(I,J,K),
         J1 is J+1, print_line(I,J1)
     ); nl.
-
 print_block(I) :-
     I < 4 -> (
         I1 is I*3-2, print_line(I1,1),
         I2 is I+1, print_block(I2)
     ); halt.
-
 main :-
     print_block(1).
