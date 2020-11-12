@@ -44,3 +44,5 @@ Output
 Reference
 ---------
 * [Multiplication tables in Rosetta Code](https://www.rosettacode.org/wiki/Multiplication_tables)
+* [Learn X in Y minutes](https://learnxinyminutes.com/)
+* [Fibonacci Benchmark](https://github.com/drujensen/fib)

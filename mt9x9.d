@@ -1,6 +1,6 @@
 // 9x9 multiplication table in D
 // CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2019.
-// ldc2 -run mt9x9.d || ldc2 mt9x9.d ; ./mt9x9
+// ldc2 -run mt9x9.d || ( ldc2 mt9x9.d ; ./mt9x9 )
 
 import std.stdio;
 void main() {
