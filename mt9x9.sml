@@ -1,5 +1,7 @@
-(* 9x9 multiplication table in Standard ML *)
-(* CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020. *)
+(*
+9x9 multiplication table in Standard ML
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
+*)
 (* mlton mt9x9.sml ; ./mt9x9 *)
 
 val i = ref 1;

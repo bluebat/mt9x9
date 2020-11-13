@@ -1,7 +1,9 @@
 #!/usr/bin/php
 <?php
-// 9x9 multiplication table in PHP
-// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+/*
+9x9 multiplication table in PHP
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+*/
 // php -f mt9x9.php || ( chmod +x mt9x9.php ; ./mt9x9.php )
 
     for($i = 1; $i <= 9; $i += 3) {

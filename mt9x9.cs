@@ -1,6 +1,8 @@
 #!/usr/bin/csharp -s
-// 9x9 multiplication table in CSharp
-// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
+/*
+9x9 multiplication table in CSharp
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
+*/
 // csharp -s mt9x9.cs || ( chmod +x mt9x9.cs ; ./mt9x9.cs )
 
 int i, j, k;

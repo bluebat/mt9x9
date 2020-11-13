@@ -1,5 +1,7 @@
-// 9x9 multiplication table in Swift
-// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+/*
+9x9 multiplication table in Swift
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+*/
 // swift mt9x9.swift || ( swiftc mt9x9.swift ; ./mt9x9 )
 
 import Foundation

@@ -1,6 +1,8 @@
 #!/usr/bin/gcl -f
-; 9x9 multiplication table in CommonLisp
-; CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+#|
+9x9 multiplication table in CommonLisp
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+|#
 ; gcl -f mt9x9.lisp || ( chmod +x mt9x9.lisp ; ./mt9x9.lisp )
 
 (dolist (i '(1 4 7))

@@ -1,7 +1,7 @@
 #!/usr/bin/guile -s
+9x9 multiplication table in Scheme
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 !#
-; 9x9 multiplication table in Scheme
-; CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 ; guile -s mt9x9.scm || ( chmod +x mt9x9.scm ; ./mt9x9.scm )
 
 (use-modules (ice-9 format))

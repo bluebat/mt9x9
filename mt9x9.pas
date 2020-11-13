@@ -1,5 +1,7 @@
-{ 9x9 multiplication table in Pascal }
-{ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018. }
+(*
+9x9 multiplication table in Pascal
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+*)
 { fpc mt9x9.pas ; ./mt9x9 }
 
 program mt9x9;
