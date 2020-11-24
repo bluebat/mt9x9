@@ -2,7 +2,7 @@
 9x9 multiplication table in Haxe
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 */
-// haxe -main Mt9x9 --interp
+// haxe --main Mt9x9 --interp
 class Mt9x9 {
     static function main() {
         for (i in [1, 4, 7]) {
