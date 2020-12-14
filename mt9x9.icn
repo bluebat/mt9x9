@@ -1,13 +1,13 @@
 #!/usr/bin/icon
 # 9x9 multiplication table in Icon
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-# icon mt9x9.icon || ( chmod +x mt9x9.icon ; ./mt9x9.icon )
+# icon mt9x9.icn || ( chmod +x mt9x9.icn ; ./mt9x9.icn )
 
 procedure main()
     local i, j, k
     every i := 1 to 9 by 3 do {
         every j := 1 to 9 do {
-            every k := ![i,i+1,i+2] do
+            every k := ![i, i+1, i+2] do
                 writes(k, "x", j, "=", right(k*j,2), "\t")
             writes("\n")
         }

@@ -8,6 +8,6 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 for i in range(1, 10, 3):
     for j in range(1, 10):
         for k in [i, i+1, i+2]:
-            print("%dx%d=%2d" % (k, j, k*j), end='\t')
-        print()
+            print("{k}x{j}={k*j:2}", end='\t')
+        print(end='\n')
     print()

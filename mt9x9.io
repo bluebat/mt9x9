@@ -3,7 +3,7 @@
 9x9 multiplication table in Io
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 */
-// io mt9x9.io
+// io mt9x9.io || ( chmod +x mt9x9.io ; ./mt9x9.io )
 
 for(i, 1, 9, 3,
     for(j, 1, 9,
