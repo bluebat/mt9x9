@@ -1,0 +1,18 @@
+%
+9x9 multiplication table in Algol
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020
+%
+comment awe mt9x9.alw -o mt9x9 && ./mt9x9 ;
+
+begin
+    for i := 1 step 3 until 9 do begin
+        for j := 1 until 9 do begin
+            for k := i, i+1, i+2 do begin
+                writeon(i_w := 1, s_w := 0, k, "x", j, "=");
+                writeon(i_w := 2, s_w := 2, k*j)
+            end k;
+            write(code(0))
+        end j;
+        write()
+    end i
+end.
