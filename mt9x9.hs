@@ -10,6 +10,7 @@ main = do
         forM_ [1..9] $ \j -> do
             forM_ [i..i+2] $ \k -> do
                 putStr (show k ++ "x" ++ show j ++ "=" ++
-                    (if (k*j)>9 then "" else " ") ++ show (k*j) ++ "\t")
+                    (if (k*j) < 10 then " " else "") ++
+                    show (k*j) ++ "\t")
             putStrLn ""
         putChar '\n'

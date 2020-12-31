@@ -5,14 +5,12 @@
 
 foreach i (1 4 7)
     foreach j (1 2 3 4 5 6 7 8 9)
-        set k = $i
-        @ K = $i + 2
-        while ($k <= $K)
-            @ s = $k * $j
+        foreach K (0 1 2)
+            @ k = $i + $K
             echo -n "$k"x"$j"=
+            @ s = $k * $j
             if ($s < 10) echo -n " "
             echo -n "$s\t"
-            @ k++
         end
         echo -n "\n"
     end
