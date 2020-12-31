@@ -7,7 +7,7 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 fn main() {
     for i in (1..10).step_by(3) {
         for j in 1..10 {
-            for k in i..i+3 {
+            for k in &[i, i+1, i+2] {
                 print!("{}x{}={:2}\t", k, j, k*j);
             }
             print!("\n");
