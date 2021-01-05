@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-9x9 multiplication table in Python3
+9x9 multiplication table in Python
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 """
 # python3 mt9x9.py || ( chmod +x mt9x9.py ; ./mt9x9.py )

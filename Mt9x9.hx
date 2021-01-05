@@ -8,7 +8,7 @@ class Mt9x9 {
         for (i in [1, 4, 7]) {
             for (j in 1...10) {
                 for (k in [i, i+1, i+2]) {
-                    Sys.print(k+'x'+j+'='+(k*j>9?'':' ')+k*j+'\t');
+                    Sys.print(k+'x'+j+'='+(k*j<10?' ':'')+k*j+'\t');
                 }
                 Sys.print('\n');
             }
