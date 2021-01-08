@@ -2,7 +2,7 @@
 9x9 multiplication table in Rust
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 */
-// rustc mt9x9.rs ; ./mt9x9
+// rustc mt9x9.rs && ./mt9x9
 
 fn main() {
     for i in (1..10).step_by(3) {

@@ -2,7 +2,7 @@
 9x9 multiplication table in Pony
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 */
-// ponyc -b mt9x9 ; ./mt9x9
+// ponyc -b mt9x9 && ./mt9x9
 
 use "collections"
 use "format"

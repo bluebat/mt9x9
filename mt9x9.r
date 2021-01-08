@@ -3,7 +3,7 @@
 9x9 multiplication table in REBOL
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 }
-; rebol -q mt9x9.r || ( chmod +x mt9x9.r ; ./mt9x9.r )
+; ./mt9x9.r || rebol -q mt9x9.r
 
 rebol []
 foreach i [1 4 7] [

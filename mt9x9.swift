@@ -2,7 +2,7 @@
 9x9 multiplication table in Swift
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 */
-// swift mt9x9.swift || ( swiftc mt9x9.swift ; ./mt9x9 )
+// swiftc mt9x9.swift && ./mt9x9 || swift mt9x9.swift
 
 import Foundation
 for i in stride(from:1, to:9, by:3) {

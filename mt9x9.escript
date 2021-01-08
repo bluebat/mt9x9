@@ -1,7 +1,7 @@
 #!/usr/bin/escript
 % 9x9 multiplication table in Erlang
 % CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-% escript mt9x9.escript || ( chmod +x mt9x9.escript ; ./mt9x9.escript )
+% ./mt9x9.escript || escript mt9x9.escript
 
 main(_) ->
     [print_block(I) || I <- lists:seq(1, 9, 3)].

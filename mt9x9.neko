@@ -2,7 +2,7 @@
 9x9 multiplication table in Neko
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 */
-// nekoc mt9x9.neko ; neko mt9x9.n
+// nekoc mt9x9.neko && neko mt9x9.n
 
 var sprintf = $loader.loadprim("std@sprintf", 2);
 var i = 1;

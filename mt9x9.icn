@@ -1,7 +1,7 @@
 #!/usr/bin/icon
 # 9x9 multiplication table in Icon
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-# icon mt9x9.icn || ( chmod +x mt9x9.icn ; ./mt9x9.icn )
+# ./mt9x9.icn || icon mt9x9.icn
 
 procedure main()
     local i, j, k

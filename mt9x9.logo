@@ -1,7 +1,7 @@
 #!/usr/bin/logo
 ; 9x9 multiplication table in Logo
 ; CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
-; logo mt9x9.logo || ( chmod +x mt9x9.logo ; ./mt9x9.logo )
+; ./mt9x9.logo || logo mt9x9.logo
 
 for [i 1 9 3] [
     for [j 1 9] [

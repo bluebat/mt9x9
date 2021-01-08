@@ -2,7 +2,7 @@
 9x9 multiplication table in Modula-2
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 *)
-(* m2c -all mt9x9.mod -o mt9x9 ; ./mt9x9 *)
+(* m2c -all mt9x9.mod -o mt9x9 && ./mt9x9 *)
 
 MODULE mt9x9;
 IMPORT InOut;

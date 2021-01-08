@@ -1,8 +1,8 @@
 #!/usr/bin/crystal
 # 9x9 multiplication table in Crystal
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
-# crystal mt9x9.cr || ( chmod +x mt9x9.cr ; ./mt9x9.cr )
-# || crystal build mt9x9.cr ; ./mt9x9
+# crystal build mt9x9.cr && ./mt9x9 || ./mt9x9.cr
+# || crystal mt9x9.cr
 
 1.step(to: 9, by: 3) do |i|
     1.upto(9) do |j|

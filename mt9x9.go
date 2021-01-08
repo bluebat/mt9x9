@@ -2,7 +2,7 @@
 9x9 multiplication table in Go
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 */
-// go run mt9x9.go || ( go build mt9x9.go ; ./mt9x9 )
+// go build mt9x9.go && ./mt9x9 || go run mt9x9.go
 
 package main
 import "fmt"

@@ -1,6 +1,6 @@
 *> 9x9 multiplication table in COBOL
 *> CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
-*> cobc -Fxj mt9x9.cob || ( cobc -Fx mt9x9.cob ; ./mt9x9 )
+*> cobc -Fx mt9x9.cob && ./mt9x9 || cobc -Fxj mt9x9.cob
 
 identification division.
 program-id. mt9x9.

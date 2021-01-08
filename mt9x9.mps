@@ -1,7 +1,7 @@
 #!/usr/bin/mumps
 ; 9x9 multiplication table in MUMPS
 ; CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-; mumps mt9x9.mps || ( chmod +x mt9x9.mps ; ./mt9x9.mps )
+; ./mt9x9.mps || mumps mt9x9.mps
 
 mt9x9
  for i=1:3:9 do

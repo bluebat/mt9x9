@@ -2,7 +2,7 @@
 9x9 multiplication table in Ceylon
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
-// ceylon compile --source . mt9x9.ceylon ; ceylon run default
+// ceylon compile --src . mt9x9.ceylon && ceylon run default
 
 shared void run() {
     for(i in (1..9).by(3)) {

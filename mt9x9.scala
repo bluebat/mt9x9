@@ -2,7 +2,7 @@
 9x9 multiplication table in Scala
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
-// scalac mt9x9.scala ; scala mt9x9
+// scalac mt9x9.scala && scala mt9x9
 
 object mt9x9 {
     def main(args: Array[String]) = {

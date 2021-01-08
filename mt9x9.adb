@@ -1,6 +1,6 @@
 -- 9x9 multiplication table in Ada
 -- CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
--- gnat make mt9x9.adb ; ./mt9x9
+-- gnat make mt9x9.adb && ./mt9x9
 
 with Ada.Text_IO; use Ada.Text_IO;
 procedure mt9x9 is

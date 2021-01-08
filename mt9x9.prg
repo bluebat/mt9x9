@@ -1,7 +1,7 @@
 #!/usr/bin/hbrun
 * 9x9 multiplication table in xBASE
 * CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
-* hbrun mt9x9.prg || ( chmod +x mt9x9.prg ; ./mt9x9.prg )
+* ./mt9x9.prg || hbrun mt9x9.prg
 
 local i, j, k
 for i := 1 to 9 step 3

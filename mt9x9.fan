@@ -3,7 +3,7 @@
 9x9 multiplication table in Fantom
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
-// fan mt9x9.fan || ( chmod +x mt9x9.fan ; ./mt9x9.fan )
+// ./mt9x9.fan || fan mt9x9.fan
 
 class mt9x9 {
     static Void main() {

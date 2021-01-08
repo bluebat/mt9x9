@@ -1,7 +1,7 @@
 #!/usr/bin/Rscript
 # 9x9 multiplication table in R
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
-# Rscript mt9x9.R || ( chmod +x mt9x9.R ; ./mt9x9.R )
+# ./mt9x9.R || Rscript mt9x9.R
 
 for(i in seq(1, 9, 3)) {
     for(j in 1:9) {

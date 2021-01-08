@@ -1,7 +1,7 @@
 #!/usr/bin/make -sf
 # 9x9 multiplication table in Make
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2019.
-# make -sf mt9x9.mk || ( chmod +x mt9x9.mk ; ./mt9x9.mk )
+# ./mt9x9.mk || make -sf mt9x9.mk
 
 include gmsl
 $(foreach i, 1 4 7, \

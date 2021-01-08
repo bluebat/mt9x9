@@ -2,7 +2,7 @@
 9x9 multiplication table in Haskell
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2019.
 -}
--- runghc mt9x9.hs || ( ghc mt9x9.hs ; ./mt9x9 )
+-- ghc mt9x9.hs && ./mt9x9 || runghc mt9x9.hs
 
 import Control.Monad
 main = do

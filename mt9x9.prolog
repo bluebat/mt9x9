@@ -2,7 +2,7 @@
 9x9 multiplication table in Prolog
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 */
-% gplc mt9x9.prolog ; ./mt9x9
+% gplc mt9x9.prolog && ./mt9x9
 
 :- initialization(main).
 print_segment(I,J,K) :-
