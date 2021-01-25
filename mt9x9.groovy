@@ -3,7 +3,7 @@
 9x9 multiplication table in Groovy
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
-// ./mt9x9.gsh || groovy mt9x9.gsh
+// ./mt9x9.groovy || groovy mt9x9.groovy
 
 for(i in (1..9).step(3)) {
     for(j in 1..9) {
