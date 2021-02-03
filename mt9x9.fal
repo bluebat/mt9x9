@@ -1,0 +1,17 @@
+#!/usr/bin/falcon -M
+/*
+9x9 multiplication table in Falcon
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+// falcon -M mt9x9.fal || ./mt9x9.fal
+
+for i in [1:9:3]
+    for j = 1 to 9
+        for k in [i, i+1, i+2]
+            s = k*j
+            >> @"$(k)x$(j)=$(s:2r)\t"
+        end
+        printl()
+    end
+    >
+end

@@ -1,0 +1,10 @@
+\ 9x9 multiplication table in ABC
+\ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+\ abclang < mt9x9.abc
+
+FOR i IN {1; 4; 7}:
+    FOR j IN {1..9}:
+        FOR k IN {i..i+2}:
+            WRITE "`k`x`j`=`k*j>>2``"">>2`"
+        WRITE /
+    WRITE /

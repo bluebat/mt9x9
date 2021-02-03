@@ -6,11 +6,11 @@
 for i in [1..10[.step(3) do
     for j in [1..9] do
         for k in [i, i+1, i+2] do
+            printn "{k}x{j}="
             if k*j < 10 then
-                printn "{k}x{j}= {k*j}\t"
-            else
-                printn "{k}x{j}={k*j}\t"
+                printn " "
             end
+            printn "{k*j}\t"
         end
         printn "\n"
     end

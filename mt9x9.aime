@@ -1,0 +1,19 @@
+#!/usr/bin/aime
+# 9x9 multiplication table in Aime
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+# aime mt9x9.aime
+
+integer i, j, k;
+for (,i in list(1, 4, 7)) {
+    j = 1;
+    while (j < 10) {
+        for (,k in list(i, i+1, i+2)) {
+            o_(k, "x", j, "=");
+            o_winteger(2, k*j);
+            o_text("\t");
+        }
+        o_text("\n");
+        j += 1;
+    }
+    o_newline();
+}

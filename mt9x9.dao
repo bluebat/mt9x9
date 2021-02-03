@@ -1,0 +1,13 @@
+#!/usr/bin/dao
+# 9x9 multiplication table in Dao
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+# dao mt9x9.dao || ./mt9x9.dao
+
+for(var i = 1:3:10) {
+    for(var j = 1:10) {
+        for(var k in {i, i+1, i+2})
+            io.writef("%dx%d=%2d\t", k, j, k*j)
+        io.write("\n")
+    }
+    io.writeln()
+}
