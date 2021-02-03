@@ -1,0 +1,20 @@
+#!/usr/bin/bc -q
+/*
+9x9 multiplication table in bc
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+# bc -q mt9x9.bc || ./mt9x9.bc
+
+for (i = 1; i <= 9; i+=3) {
+    for (j = 1; j <= 9; j++) {
+        for (k = i; k <= i+2; k++) {
+            print k, "x", j, "="
+            if (k*j < 10) " "
+            print k*j, "\t"
+        }
+        print "\n"
+    }
+    "
+"
+}
+quit
