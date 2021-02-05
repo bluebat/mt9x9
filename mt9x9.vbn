@@ -1,0 +1,19 @@
+' 9x9 multiplication table in VB.NET
+' CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+REM vbnc mt9x9.vbn && mono mt9x9.exe
+
+Imports System.Console
+Module mt9x9
+    Sub Main()
+        Dim i, j, k As Integer
+        For i = 1 to 9 step 3
+            For j = 1 to 9
+                For Each k In New Integer() {i, i+1, i+2}
+                    Write("{0}x{1}={2,2}{3}", k, j, k*j, vbTab)
+                Next
+                Write(vbLf)
+            Next
+            WriteLine()
+        Next
+    End Sub
+End Module

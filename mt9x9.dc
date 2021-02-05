@@ -1,0 +1,21 @@
+#!/usr/bin/dc
+[ 9x9 multiplication table in dc ]sz
+[ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021. ]sz
+[ ./mt9x9.dc || dc mt9x9.dc ]sz
+ 
+[32 P]sS
+[
+ lk n [x] P lj n [=] P lk lj * d 9 !<S n 9 P
+ lk 1 + d sk li 2 + !<K
+]sK
+[
+ li d sk lK x
+ 10 P
+ lj 1 + d sj 9 !<J
+]sJ
+[
+ 1 d sj lJ x
+ 10 P
+ li 3 + d si 9 !<I
+]sI
+1 d si lI x
