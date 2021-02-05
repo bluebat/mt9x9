@@ -2,7 +2,7 @@
 9x9 multiplication table in C#
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 */
-// mcs mt9x9.cs && ./mt9x9.exe
+// mcs mt9x9.cs && mono mt9x9.exe
 
 using System;
 class Program {
