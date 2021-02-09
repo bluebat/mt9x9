@@ -1,6 +1,6 @@
 #!/usr/bin/bc -q
 /*
-9x9 multiplication table in bc
+9x9 multiplication table in BC
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
 # ./mt9x9.bc || bc -q mt9x9.bc
