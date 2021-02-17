@@ -8,7 +8,7 @@ class MAIN is
             loop j ::= 1.upto!(9);
                 k:ARRAY{INT} := |i, i+1, i+2|;
                 loop
-                    #OUT+ k.elt! + "x" + j + "=" + #FMT("%2d", k.elt!*j) + "\t"
+                    #OUT+ k.elt!+"x"+j+"="+#FMT("%2d", k.elt!*j)+"\t"
                 end;
                 #OUT+ "\n";
             end;

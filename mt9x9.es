@@ -1,16 +1,13 @@
-#!/usr/bin/es
-# 9x9 multiplication table in eslang
-# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
-# ./mt9x9.es || es mt9x9.es
+#!/usr/bin/escript
+% 9x9 multiplication table in Erlang Script
+% CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
+% ./mt9x9.es || escript mt9x9.es
 
-(for i in (1 10 3)
-    (for j in (1 10)
-        (for k in (@ i (i + 1) (+ i 2))
-            (printf '$(k)x$(j)=')
-            (if ((k * j) < 10) (printf " "))
-            (printf '$(k * j)\t')
-        )
-        (printf "\n")
-    )
-    (print)
-)
+main(_) ->
+    [print_block(I) || I <- lists:seq(1, 9, 3)].
+print_block(I) ->
+    [print_line(I, J) || J <- lists:seq(1, 9)],
+    io:fwrite("~n").
+print_line(I, J) ->
+    [io:format("~Bx~B=~2B\t", [K, J, K*J]) || K <- lists:seq(I, I+2)],
+    io:nl().

@@ -1,9 +1,10 @@
-#!/usr/bin/escript
 % 9x9 multiplication table in Erlang
-% CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-% ./mt9x9.erl || escript mt9x9.erl
+% CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+% erlc mt9x9.erl && erl -noshell -s mt9x9 start -s init stop
 
-main(_) ->
+-module(mt9x9).
+-export([start/0]).
+start() ->
     [print_block(I) || I <- lists:seq(1, 9, 3)].
 print_block(I) ->
     [print_line(I, J) || J <- lists:seq(1, 9)],

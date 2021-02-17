@@ -1,7 +1,7 @@
 #!/usr/bin/nit
 # 9x9 multiplication table in Nit
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-# nitc mt9x9.nit && ./mt9x9 || nit mt9x9.nit || ./mt9x9.nit
+# nitc mt9x9.nit && ./mt9x9 || ./mt9x9.nit || nit mt9x9.nit
 
 for i in [1..10[.step(3) do
     for j in [1..9] do
