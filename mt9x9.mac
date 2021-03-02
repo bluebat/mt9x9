@@ -1,0 +1,16 @@
+/*
+9x9 multiplication table in Maxima
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+/* maxima --very-quiet < mt9x9.mac */
+
+ttyoff: true;
+for i: 1 step 3 thru 9 do (
+    for j: 1 thru 9 do (
+        for k in [i, i+1, i+2] do (
+            printf(true, "~dx~d=~2d~a", k, j, k*j, tab)
+        ),
+        printf(true, "~%")
+    ),
+    newline()
+);

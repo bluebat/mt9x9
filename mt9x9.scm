@@ -14,7 +14,7 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
                          (format #t "~dx~d=~2d~c" k j (* k j) #\tab))
                     (list i (+ i 1) (+ i 2)))
                 (display #\newline))
-            '(1 2 3 4 5 6 7 8 9))
+            (map 1+ (iota 9)))
         (newline))
     '(1 4 7))
  
