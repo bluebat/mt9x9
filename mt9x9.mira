@@ -3,10 +3,14 @@
 || CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 || miranda -exec mt9x9.mira
 
-main = concat (map block [1, 4, 7])
-       where
-       block i = concat (map line [1..9]) ++ "\n"
-                 where
-                 line j = concat (map item [i..i+2]) ++ "\n"
-                          where
-                          item k = shownum k ++ "x" ++ shownum j ++ "=" ++ rjustify 2 (shownum (k*j)) ++ "\t"
+main =
+    concat (map block [1, 4, 7])
+    where
+    block i =
+        concat (map line [1..9]) ++ "\n"
+        where
+        line j =
+            concat (map item [i..i+2]) ++ "\n"
+            where
+            item k =
+                shownum k ++ "x" ++ shownum j ++ "=" ++ rjustify 2 (shownum (k*j)) ++ "\t"

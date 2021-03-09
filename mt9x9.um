@@ -1,0 +1,17 @@
+/*
+9x9 multiplication table in Umka
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+// umka mt9x9.um
+
+fn main() {
+    for i := 1; i <= 9; i += 3 {
+        for j := 1; j <= 9; j++ {
+            for k in [3]int{i, i+1, i+2} {
+                printf("%dx%d=%2d\t", k, j, k*j)
+            }
+            printf("\n")
+        }
+        printf("\n")
+    }
+}
