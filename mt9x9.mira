@@ -1,7 +1,7 @@
 #!/usr/bin/miranda -exec
 || 9x9 multiplication table in Miranda
 || CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
-|| miranda -exec mt9x9.mira
+|| ./mt9x9.mira || miranda -exec mt9x9.mira
 
 main =
     concat (map block [1, 4, 7])

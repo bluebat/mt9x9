@@ -7,18 +7,18 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 #include "share/atspre_staload.hats"
 implement main0() = block(1) where {
     fun item(i: int, j: int, k: int): void =
-        if k < i+3 then (
+        if k <= i+2 then (
             print!(k, "x", j, "=", (if k*j < 10 then " " else ""): string, k*j, "\t");
             item(i, j, k+1)
         )
     fun line(i: int, j: int): void =
-        if j < 10 then (
+        if j <= 9 then (
             item(i, j, i);
             print("\n");
             line(i, j+1)
         )
     fun block(i: int): void =
-        if i < 10 then (
+        if i <= 9 then (
             line(i, 1);
             print_newline();
             block(i+3)
