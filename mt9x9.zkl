@@ -1,0 +1,16 @@
+#!/usr/bin/zkl
+/*
+9x9 multiplication table in ZKL
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+// ./mt9x9.zkl || zkl mt9x9.zkl
+
+foreach i in ([1..9, 3]) {
+    foreach j in (Utils.range(1, 9)) {
+        foreach k in (L(i, i+1, i+2)) {
+            print(k, "x", j, "=", "%2d".fmt(k*j), "\t");
+        }
+        print("\n");
+    }
+    println();
+}
