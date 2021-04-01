@@ -4,7 +4,8 @@
 # ./mt9x9.csh || tcsh -f mt9x9.csh
 
 foreach i (1 4 7)
-    foreach j (1 2 3 4 5 6 7 8 9)
+    set j = 1
+    while ($j <= 9)
         foreach K (0 1 2)
             @ k = $i + $K
             echo -n "$k"x"$j"=
@@ -13,6 +14,7 @@ foreach i (1 4 7)
             echo -n "$s\t"
         end
         echo -n "\n"
+        @ j++
     end
     echo
 end
