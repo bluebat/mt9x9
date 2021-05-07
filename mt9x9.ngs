@@ -1,0 +1,14 @@
+#!/usr/bin/ngs
+# 9x9 multiplication table in NGS
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+# ./mt9x9.ngs || ngs mt9x9.ngs
+
+for(i; 3) {
+    for(j = 1; j <= 9; j += 1) {
+        [i*3+1, i*3+2, i*3+3].each(F(k) {
+            write("${k}x${j}=${if k*j<10 ' ' ''}${k*j}\t")
+        })
+        write('\n')
+    }
+    echo('')
+}
