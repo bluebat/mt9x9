@@ -1,0 +1,22 @@
+/*
+9x9 multiplication table in PL/I
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+/*
+plic -C -dELF -lsiaxgo -ew mt9x9.pli -o mt9x9.o
+ld -z muldefs -Bstatic --oformat=elf32-i386 -melf_i386 -e main mt9x9.o libprf.a -o mt9x9
+*/
+
+mt9x9: proc options(main);
+    dcl(i, j, k) fixed dec(1);
+    do i = 1 to 9 by 3;
+        do j = 1 to 9;
+            do k = i to i+2;
+                put edit (k, 'x', j, '=', k*j) (P'9', A, P'9', A, P'Z9');
+                put edit ('09'X) (A);
+            end;
+            put skip edit ('') (A);
+        end;
+        put skip edit ('') (A);
+    end;
+end mt9x9;
