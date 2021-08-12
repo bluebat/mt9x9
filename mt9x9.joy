@@ -1,0 +1,23 @@
+#!/usr/bin/joy
+(*
+9x9 multiplication table in Joy
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*)
+# ./mt9x9.joy || joy mt9x9.joy
+
+1 [9 <=] [
+    1 [9 <=] [
+        0 [2 <=] [
+            dup rotated dupd
+            + dup 48 + putch 'x putch
+            rolldown dup 48 + putch '= putch
+            dup rollup * 'i 2 1 format putchars rolldown
+            '\t putch
+            succ
+        ] while pop
+        '\n putch
+        succ
+    ] while pop
+    '\n putch
+    3 +
+] while pop.

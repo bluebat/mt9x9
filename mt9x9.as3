@@ -1,0 +1,15 @@
+/*
+9x9 multiplication table in ActionScript
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+*/
+// as3shebang mt9x9.as3
+
+for(var i:uint = 1; i <= 9; i += 3) {
+    for(var j:uint = 1; j <= 9; j++) {
+        var s:String = "";
+        for(var k:uint = i; k <= i+2; k++)
+            s += k+"x"+j+"="+(" "+k*j).slice(-2)+"\t";
+        trace(s);
+    }
+    trace();
+}
