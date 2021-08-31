@@ -1,0 +1,23 @@
+#!/usr/bin/retro
+9x9 multiplication table in Retro
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+( retro mt9x9.retro )
+
+~~~
+{ #1 #4 #7 } [
+    { #1 #2 #3 #4 #5 #6 #7 #8 #9 } [
+        dup-pair swap
+        { #0 #1 #2 } [
+            + dup-pair
+            n:put 'x s:put n:put '= s:put *
+            dup #10 lt? [ '_ s:put ] if
+            '%n\t s:format s:put
+            dup-pair swap
+        ] a:for-each
+        nl
+        drop-pair drop
+    ] a:for-each
+    nl
+    drop
+] a:for-each
+~~~

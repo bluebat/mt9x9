@@ -1,20 +1,17 @@
 /*
-9x9 multiplication table in Verilog
+9x9 multiplication table in V
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
-// iverilog mt9x9.v -o mt9x9 && ./mt9x9
+// v mt9x9.v && ./mt9x9 || v run mt9x9.v
 
-module mt9x9;
-    integer i, j, k;
-    initial begin
-        for(i = 1; i <= 9; i += 3) begin
-            for(j = 1; j <= 9; j++) begin
-                for(k = i; k <= i+2; k++) begin
-                    $write("%0dx%0d=%2d\t", k, j, k*j);
-                end
-                $write("\n");
-            end
-            $display();
-        end
-    end
-endmodule
+fn main() {
+    for i := 1; i <= 9; i += 3 {
+        for j in 1..10 {
+            for k in [i, i+1, i+2] {
+                print('${k}x${j}=${k*j:2}\t')
+            }
+            print('\n')
+        }
+        println('')
+    }
+}
