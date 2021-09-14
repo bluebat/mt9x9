@@ -1,0 +1,16 @@
+* 9x9 multiplication table in SNOBOL4
+* CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+* snobol4 -b mt9x9.sno
+
+        i = -3
+LOOP_I  i = ?LT(i, 6) i + 3                      :F(LAST)
+        OUTPUT = ?GT(i, 0) ""
+        j = 0
+LOOP_J  j = ?LT(j, 9) j + 1                      :F(LOOP_I)
+        k = i
+        s = ""
+LOOP_K  k = ?LT(k, i + 3) k + 1                  :F(OUT)
+        s = s k "x" j "=" LPAD(k * j, 2) CHAR(9) :(LOOP_K)
+OUT     OUTPUT = s                               :(LOOP_J)
+LAST    OUTPUT = ""
+END
