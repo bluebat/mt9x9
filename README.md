@@ -46,3 +46,4 @@ Reference
 * [Multiplication tables in Rosetta Code](https://www.rosettacode.org/wiki/Multiplication_tables)
 * [Learn X in Y minutes](https://learnxinyminutes.com/)
 * [Fibonacci Benchmark](https://github.com/drujensen/fib)
+* [99 Bottles of Beer](https://www.99-bottles-of-beer.net/)
