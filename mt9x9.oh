@@ -1,0 +1,17 @@
+#!/usr/bin/oh
+# 9x9 multiplication table in Oh
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+# ./mt9x9.oh || oh mt9x9.oh
+
+for (seq 3) (method (I) {
+    define i (math "$I * 3 + 1")
+    for (seq 9) (method (J) {
+        define j (math "$J + 1")
+        for (seq 3) (method (K) {
+            define k (math "$K + $i")
+            printf %dx%d=%2d\t $k $j (math "$k * $j")
+        })
+        printf \n
+    })
+    echo
+})

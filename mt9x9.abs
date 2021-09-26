@@ -1,0 +1,15 @@
+#!/usr/bin/abs
+# 9x9 multiplication table in ABS
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+// ./mt9x9.abs || abs mt9x9.abs
+
+for i in [1, 4, 7] {
+    for j in 1..9 {
+        s = ""
+        for k in [i, i+1, i+2] {
+            s = s + fmt("%sx%s=%2s\t", k, j, k*j)
+        }
+        echo(s)
+    }
+    echo()
+}

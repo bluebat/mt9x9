@@ -1,0 +1,16 @@
+#!/usr/bin/monkeylang
+// 9x9 multiplication table in Monkey
+// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+// ./mt9x9.mon || monkeylang mt9x9.mon
+
+i = 1
+for (i <= 9) {
+    foreach j in 1..9 {
+        foreach k in [i, i+1, i+2] {
+            printf("%dx%d=%2d\t", k, j, k*j)
+        }
+        puts("\n")
+    }
+    puts("\n")
+    i += 3
+}
