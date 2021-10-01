@@ -1,0 +1,16 @@
+#!/usr/bin/genius
+# 9x9 multiplication table in GEL
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+# ./mt9x9.gel || genius mt9x9.gel
+
+for i = 1 to 9 by 3 do (
+    for j = 1 to 9 do (
+        for k in [i, i+1, i+2] do (
+            printn(k+"x"+j+"=");
+            if k*j < 10 then printn(" ");
+            printn(k*j+"\t")
+        );
+        printn("\n")
+    );
+    print("")
+)
