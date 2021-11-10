@@ -1,0 +1,25 @@
+% 9x9 multiplication table in SISAL
+% CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+% sisalc -fileio mt9x9.sis -o mt9x9 && ./mt9x9
+
+define main
+type string = array[character];
+function main(returns string)
+    for i in array[1: 1, 4, 7] cross j in 1, 9 cross k in i, i+2
+        s := array[1: character(48+k),'x',character(48+j),'='] ||
+        if k*j < 10 then
+            array[1: ' ',character(48+k*j)]
+        else
+            array[1: character(48+k*j/10),character(48+mod(k*j,10))]
+        end if ||
+        if k ~= i+2 then
+            array[1: '\t']
+        elseif j = 9 then
+            array[1: '\n','\n']
+        else
+            array[1: '\n']
+        end if
+        returns
+            value of catenate s
+    end for 
+end function
