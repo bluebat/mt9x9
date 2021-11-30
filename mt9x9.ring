@@ -3,7 +3,7 @@
 9x9 multiplication table in Ring
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
-// ./mt9x9 || ring mt9x9.ring
+// ./mt9x9.ring || ring mt9x9.ring
 
 for i = 1 to 9 step 3
     for j = 1 to 9
