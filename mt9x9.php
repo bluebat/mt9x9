@@ -11,7 +11,7 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
             foreach (array($i, $i+1, $i+2) as $k) {
                 printf("%dx%d=%2d\t", $k, $j, $k*$j);
             }
-            printf("\n");
+            print("\n");
         }
         echo "\n";
     }
