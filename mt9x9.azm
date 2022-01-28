@@ -1,0 +1,24 @@
+\: 9x9 multiplication table in Zoem
+\: CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+\: zoem -i mt9x9
+
+\set{i}{1}
+\while{\let{\i <= 9}}{
+    \set{j}{1}
+    \while{\let{\j <= 9}}{
+        \set{k}{\i}
+        \set{K}{0}
+        \while{\let{\K <= 2}}{
+            \setx{k}{\let{\i + \K}}
+            \write{-}{txt}{\k\,x\j\,=}
+            \set{s}{\let{\k * \j}}
+            \if{\let{\s < 10}}{\write{-}{txt}{ }}{}
+            \write{-}{txt}{\s  }
+            \setx{K}{\let{\K + 1}}
+        }
+        \write{-}{txt}{\|}
+        \setx{j}{\let{\j + 1}}
+    }
+    \write{-}{txt}{\|}
+    \setx{i}{\let{\i + 3}}
+}
