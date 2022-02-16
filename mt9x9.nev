@@ -1,0 +1,23 @@
+#!/usr/bin/never -f
+/*
+9x9 multiplication table in Never
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+*/
+# never -f mt9x9.nev
+
+func main() -> int {
+    var i = 0;
+    for (i = 1; i <= 9; i = i+3) {
+        var j = 0;
+        for (j = 1; j <= 9; j = j+1) {
+            var k = 0;
+            for (k = i; k <= i+2; k = k+1) {
+                prints(k + "x" + j + "=");
+                if (k*j < 10) {prints(" ")} else {prints("")};
+                prints(k*j + "\t")
+            };
+            prints("\n")
+        };
+        prints("\n")
+    }
+}
