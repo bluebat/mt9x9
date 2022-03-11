@@ -1,0 +1,14 @@
+#!/usr/bin/pure
+/*
+9x9 multiplication table in Pure
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+*/
+// pure -c mt9x9.pure -o mt9x9 && ./mt9x9 || pure mt9x9.pure
+
+using system;
+map block [1, 4, 7] with
+    block i = map (line i) (1..9);
+    line i j = map (item j) (i..i+2);
+    item j k = printf ("%dx%d=%2d%s") (k, j, k*j,
+        (if k mod 3~=0 then "\t" else if j==9 then "\n\n" else "\n"));
+end;
