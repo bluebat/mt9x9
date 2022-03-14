@@ -3,13 +3,13 @@
 * snobol4 -b mt9x9.sno
 
 	i = 1
-LOOP_I	j = 1
-LOOP_J	k = i
+block	j = 1
+line	k = i
 	s = ""
-LOOP_K	s = s k "x" j "=" LPAD(k * j, 2) CHAR(9)
-	k = ?LT(k, i + 2) k + 1                  :S(LOOP_K)
+item	s = s k "x" j "=" LPAD(k * j, 2) CHAR(9)
+	k = ?LT(k, i + 2) k + 1                  :S(item)
 	OUTPUT = s
-	j = ?LT(j, 9) j + 1                      :S(LOOP_J)
+	j = ?LT(j, 9) j + 1                      :S(line)
 	OUTPUT = ""
-	i = ?LT(i, 7) i + 3                      :S(LOOP_I)
+	i = ?LT(i, 7) i + 3                      :S(block)
 END
