@@ -1,0 +1,15 @@
+% 9x9 multiplication table in Nelson
+% CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+% nelson-cli -q -f mt9x9.nlf
+
+for i = 1:3:9
+    for j = 1:9
+        s = "";
+        for k = [i, i+1, i+2]
+            s = s + sprintf("%dx%d=%2d\t", k, j, k*j);
+        end
+        disp(s);
+    end
+    disp("");
+end
+exit()
