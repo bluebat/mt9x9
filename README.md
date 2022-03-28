@@ -8,6 +8,7 @@ Guidelines
 * Executing command examples
 * Possible 3 for/foreach/map loops
 * Possible 3 output directives
+* Formatted output
 
 Output
 ------

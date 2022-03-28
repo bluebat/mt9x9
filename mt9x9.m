@@ -1,6 +1,6 @@
 % 9x9 multiplication table in MATLAB
 % CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-% octave mt9x9.m
+% octave-cli mt9x9.m
 
 for i = (1:3:9)
     for j = (1:9)
