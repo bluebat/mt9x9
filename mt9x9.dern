@@ -1,0 +1,32 @@
+#!/usr/bin/dern
+9x9 multiplication table in Dern
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+!#
+; ./mt9x9.dern || dern mt9x9.dern
+
+(define stdout as (output-file-open [/dev/fd/1]) [Standard Out])
+(define write as (fn (X) (port-write stdout X)) [Print to STDOUT])
+(define dtoc as (fn (X) (cp@ [0123456789] X)) [Digit to Char])
+(for i from {D+1} to {D+9} step {D+3}
+    (for j from {D+1} to {D+9}
+        (for k from i to (+ i {D+2})
+            (write (dtoc k))
+            (write [x])
+            (write (dtoc j))
+            (write [=])
+            (if (< (* k j) {D+10})
+                (do
+                    (write [ ])
+                    (write (dtoc (* k j)))
+                )
+                (do
+                    (write (dtoc (to-integer (/ (* k j) {D+10}))))
+                    (write (dtoc (mod (* k j) {D+10})))
+                )
+            )
+            (write [|tab|])
+        )
+        (write [|newline|])
+    )
+    (if (< i {D+7}) (write [|0A|]))
+)
