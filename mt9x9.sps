@@ -2,23 +2,22 @@
 * CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
 * pspp mt9x9.sps
 
-new file.
-input program.
-    loop #i=1 to 9 by 3.
-        loop #j=1 to 9.
-            compute #k1=#i.
-            compute #s1=#k1*#j.
-            compute #k2=#i+1.
-            compute #s2=#k2*#j.
-            compute #k3=#i+2.
-            compute #s3=#k3*#j.
-            write / #k1(F1) "x" #j(F1) "=" #s1(F2) "  "
-                    #k2(F1) "x" #j(F1) "=" #s2(F2) "  " 
-                    #k3(F1) "x" #j(F1) "=" #s3(F2).
-        end loop.
-        write.
-    end loop.
-    print.
-    end file.
-end input program.
-execute.
+NEW FILE.
+INPUT PROGRAM.
+    STRING #s #s0 TO #s2 (A6).
+    LOOP #i = 1 TO 9 BY 3.
+        LOOP #j = 1 TO 9.
+            LOOP #k = #i TO #i+2.
+                COMPUTE #s = CONCAT(STRING(#k,F1),"x",STRING(#j,F1),"=",STRING(#k*#j,F2)).
+                IF(#k = #i) #s0 = #s.
+                IF(#k = #i+1) #s1 = #s.
+                IF(#k = #i+2) #s2 = #s.
+            END LOOP.
+            PRINT / #s0(A6) "  " #s1(A6) "  " #s2(A6).
+        END LOOP.
+        PRINT.
+    END LOOP.
+    WRITE.
+    END FILE.
+END INPUT PROGRAM.
+EXECUTE.
