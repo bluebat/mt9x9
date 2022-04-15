@@ -5,9 +5,9 @@
 for i = (1:3:9)
     for j = (1:9)
         for k = [i, i+1, i+2]
-            fprintf('%dx%d=%2d\t', k, j, k*j);
+            printf('%dx%d=%2d\t', k, j, k*j);
         end
-        fprintf('\n');
+        puts("\n");
     end
     disp('');
 end
