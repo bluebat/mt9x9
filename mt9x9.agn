@@ -1,0 +1,16 @@
+#!/usr/bin/agena
+/*
+9x9 multiplication table in Agena
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+*/
+# ./mt9x9.agn || agena mt9x9.agn
+
+for i from 1 to 9 by 3 do
+    for j from 1 to 9 do
+        for k in [i, i+1, i+2] do
+            printf('%dx%d=%2d\t', k, j, k*j)
+        od;
+        print()
+    od;
+    writeline()
+od;
