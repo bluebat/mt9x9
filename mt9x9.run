@@ -1,0 +1,14 @@
+#!/usr/bin/ampl
+# 9x9 multiplication table in AMPL
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+# ./mt9x9.run || ampl mt9x9.run
+
+for {i in 1 .. 9 by 3} {
+    for {j in 1 .. 9} {
+        for {k in {i, i+1, i+2}} {
+            printf "%dx%d=%2d\t", k, j, k*j;
+        }
+        printf "\n";
+    }
+    printf "\n";
+}
