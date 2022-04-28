@@ -1,6 +1,6 @@
 #!/usr/bin/gjs
 /*
-9x9 multiplication table in Javascript
+9x9 multiplication table in JavaScript
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 */
 // ./mt9x9.js || gjs mt9x9.js
