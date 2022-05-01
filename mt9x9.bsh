@@ -1,0 +1,15 @@
+#!/usr/bin/bsh
+/*
+9x9 multiplication table in BeanShell
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+*/
+// ./mt9x9.bsh || bsh mt9x9.bsh
+
+for(i = 1; i <= 9; i += 3) {
+    for(j = 1; j <= 9; j++) {
+        for(k: new int[]{i, i+1, i+2})
+            System.out.printf("%dx%d=%2d\t", k, j, k*j);
+        System.out.printf("\n");
+    }
+    System.out.println();
+}

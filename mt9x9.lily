@@ -1,0 +1,18 @@
+#!/usr/bin/lily
+# 9x9 multiplication table in Lily
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+# ./mt9x9.lily || lily mt9x9.lily
+
+for i in 1...9 by 3: {
+    for j in 1...9: {
+        foreach k in [i, i+1, i+2]: {
+            stdout.write("{}x{}=".format(k, j))
+            if k*j < 10: {
+                stdout.write(" ")
+            }
+            stdout.write("{}\t".format(k*j))
+        }
+        stdout.write("\n")
+    }
+    print("")
+}

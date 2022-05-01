@@ -6,10 +6,9 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 
 public class mt9x9 {
     public static void main(String args[]) {
-        int i, j, k; 
-        for(i = 1; i <= 9; i += 3) {
-            for(j = 1; j <= 9; j++) {
-                for(k = i; k <= i+2; k++)
+        for(int i = 1; i <= 9; i += 3) {
+            for(int j = 1; j <= 9; j++) {
+                for(int k: new int[]{i, i+1, i+2})
                     System.out.printf("%dx%d=%2d\t", k, j, k*j);
                 System.out.printf("\n");
             }
