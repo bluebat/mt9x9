@@ -2,7 +2,7 @@
 9x9 multiplication table in Odin
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
 */
-// odin-lang build mt9x9.odin -file && ./mt9x9
+// odin-lang build mt9x9.odin -file && ./mt9x9.bin
 
 package mt9x9
 import "core:fmt"
