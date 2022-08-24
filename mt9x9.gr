@@ -1,0 +1,27 @@
+/*
+9x9 multiplication table in Grain
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+*/
+// grain mt9x9.gr || grain run mt9x9.gr.wasm
+
+import File from "sys/file"
+import Range from "range"
+let item = (j, k) => {
+  File.fdWrite(File.stdout, toString(k) ++ "x")
+  File.fdWrite(File.stdout, toString(j) ++ "=")
+  if (k*j < 10) {
+    File.fdWrite(File.stdout, " " ++ toString(k*j) ++ "\t")
+  } else {
+    File.fdWrite(File.stdout, toString(k*j) ++ "\t")
+  }
+  void
+}
+let line = (i, j) => {
+  Range.forEach(k => item(j, k), Range.Inclusive(i, i+2))
+  print("")
+}
+let block = (i) => {
+  Range.forEach(j => line(i*3+1, j), Range.Inclusive(1, 9))
+  print("")
+}
+Range.forEach(i => block(i), Range.Inclusive(0, 2))

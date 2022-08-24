@@ -1,23 +1,18 @@
-#!/usr/bin/kite
-/[
-9x9 multiplication table in Kite
+/*
+9x9 multiplication table in Kotlin
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
-]/
-# ./mt9x9.kt || kite mt9x9.kt
+*/
+// kotlinc-native -o mt9x9 mt9x9.kt && ./mt9x9.kexe
 
-i = 1;
-while(i <= 9) [
-    j = 1;
-    while(j <= 9) [
-        k = i;
-        s = "";
-        until(k > 2+i) [
-            s = s + ("%dx%d=%2d\t" | format([k, j, k*j]));
-            k = k + 1;
-        ];
-        s | print;
-        j = j + 1;
-    ];
-    "" | print;
-    i = i + 3;
-];
+fun main() {
+    for (i in 1..9 step 3) {
+        for (j in 1..9) {
+            (i..i+2).forEach {
+                print("${it}x${j}=")
+                print((it*j).toString().padStart(2) + "\t")
+            }
+            print("\n")
+        }
+        println()
+    }
+}
