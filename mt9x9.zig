@@ -5,9 +5,9 @@
 const std = @import("std");
 pub fn main() !void {
     var i: u8 = 1;
-    while (i < 10) : (i += 3) {
+    while (i <= 9) : (i += 3) {
         var j: u8 = 1;
-        while (j < 10) : (j += 1) {
+        while (j <= 9) : (j += 1) {
             for ([_]u8{i, i+1, i+2}) |k| {
                 std.debug.print("{d}x{d}={d: >2}\t", .{k, j, k*j});
             }
