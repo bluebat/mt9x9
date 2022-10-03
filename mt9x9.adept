@@ -1,0 +1,18 @@
+// 9x9 multiplication table in Adept
+// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+// adept mt9x9.adept && ./mt9x9
+
+import basics
+func main {
+    for(i int = 1; i <= 9; i += 3) {
+        for(j int = 1; j <= 9; j++) {
+            each int in {i, i+1, i+2} {
+                printf("%dx%d=", it, j)
+                if it*j < 10, putchar(0x20)
+                printf("%d\t", it*j)
+            }
+            place('\n')
+        }
+        print('')
+    }
+}
