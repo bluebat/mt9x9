@@ -1,7 +1,7 @@
-#!/usr/bin/covs
+#!/usr/bin/covscript
 # 9x9 multiplication table in Covariant Script
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
-# ./mt9x9.csc || covs mt9x9.csc
+# ./mt9x9.csc || covscript mt9x9.csc
 
 foreach i in {1, 4, 7}
     foreach j in range(1, 10)

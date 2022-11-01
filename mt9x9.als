@@ -1,7 +1,7 @@
 #!/usr/bin/axi
 # 9x9 multiplication table in Afnix
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
-# axc mt9x9.als && axi mt9x9.axc || axi mt9x9.als
+# axc mt9x9.als && axi mt9x9.axc || ./mt9x9.als || axi mt9x9.als
 
 trans i 0
 trans j 0

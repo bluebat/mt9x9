@@ -3,7 +3,7 @@
 9x9 multiplication table in Euphoria
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
 */
--- phix mt9x9.ex
+-- ./mt9x9.ex || phix mt9x9.ex
 
 for i = 1 to 9 by 3 do
     for j = 1 to 9 do
