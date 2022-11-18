@@ -1,0 +1,20 @@
+/*
+9x9 multiplication table in Cantonese
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
+*/
+/* cantonese mt9x9.cantonese */
+
+|甲| 從 0 行到 3
+    |乙| 從 1 行到 10
+        講嘢: |列| 係 ""
+        |丙| 從 |甲 乘 3 加 1| 行到 |甲 乘 3 加 4|
+            講嘢: |列| 係 |列 加 str(丙) 加 "x" 加 str(乙) 加 "="|
+            如果 |丙 乘 乙 比唔上 10| 嘅話 -> {
+                講嘢: |列| 係 |列 加 " "|
+            }
+            講嘢: |列| 係 |列 加 str(丙 乘 乙) 加 "\t"|
+        行晒
+        畀我睇下 |列| 點樣先？
+    行晒
+    畀我睇下 "" 點樣先？
+行晒
