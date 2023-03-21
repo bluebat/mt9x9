@@ -1,0 +1,17 @@
+#!/usr/bin/nickle
+/*
+9x9 multiplication table in Nickle
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2023.
+nickle mt9x9.5c
+*/
+
+int i, j, k;
+for(i = 1; i <= 9; i += 3) {
+    for(j = 1; j <= 9; j++) {
+        for(k = i; k <= i+2; k++)
+            printf("%dx%d=%2d\t", k, j, k*j);
+        putchar(10);
+    }
+    printf("\n");
+}
+exit(0);
