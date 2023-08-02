@@ -1,6 +1,6 @@
 mt9x9
 =====
-Multiplication Table from 1x1 to 9x9 in various programming languages
+Multiplication Table in Various Programming Languages
 
 Guidelines
 ----------

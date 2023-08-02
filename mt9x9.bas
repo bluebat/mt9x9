@@ -8,8 +8,8 @@ for i as integer = 1 to 9 step 3
     for j as integer = 1 to 9
         for k as integer = i to i+2
             print using "#x#=##"+chr(9); k; j; k*j;
-        next
+        next k
         print chr(10);
-    next
+    next j
     print
-next
+next i
