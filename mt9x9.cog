@@ -1,0 +1,25 @@
+~~ 9x9 multiplication table in Cognate
+~~ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2023.
+~~ cognac mt9x9.cog -run
+
+Def Item (
+    Let J;
+    Let K;
+    Puts (K"x"J"=");
+    Put If < 10 * K J then " " else "";
+    Puts (* K J"\t")
+);
+Def Line (
+    Let I;
+    Let J;
+    Map (Item J) Range I + I 3;
+    Drop;
+    Print ""
+); 
+Def Block (
+    Let I as block number;
+    Map (Line I) over Range 1 to 10;
+    Drop;
+    Print ""
+);
+(Block); For List (1 4 7);
