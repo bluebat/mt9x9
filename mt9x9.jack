@@ -1,0 +1,31 @@
+/*
+9x9 multiplication table in Jack
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2023.
+*/
+// dcc mt9x9.jack && jackvm mt9x9.vm
+
+class Main {
+    function void main() {
+        var int i, j, k;
+        let i = 1;
+        while(i < 10) {
+            let j = 1;
+            while(j < 10) {
+                let k = i;
+                while(k < (i+3)) {
+                    do Output.printf("%dx%d=", k, j);
+                    if((k*j) < 10) {
+                        do Output.printf(" ");
+                    }
+                    do Output.printf("%d\t", k*j);
+                    let k = k + 1;
+                }
+                let j = j + 1;
+                do Output.printf("\n");
+            }
+            let i = i + 3;
+            do Output.printf("\n");
+        }
+        return;
+    }
+}
