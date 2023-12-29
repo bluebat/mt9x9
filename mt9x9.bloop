@@ -1,0 +1,26 @@
+DEFINE PROCEDURE ''MT9X9'' [N]:
+BLOCK 0: BEGIN
+    CELL(0) <= 1;
+    LOOP 3 TIMES:
+    BLOCK 1: BEGIN
+        CELL(1) <= 1;
+        LOOP 9 TIMES:
+        BLOCK 2: BEGIN
+            CELL(2) <= CELL(0);
+            LOOP 3 TIMES:
+            BLOCK 3: BEGIN
+                PRINT [CELL(2), 'x', CELL(1), '='];
+                IF CELL(2) * CELL(1) < 10, THEN:
+                PRINT [' '];
+                PRINT [CELL(2) * CELL(1), '	'];
+                CELL(2) <= CELL(2) + 1;
+            BLOCK 3: END;
+            PRINT ['
+'];
+            CELL(1) <= CELL(1) + 1;
+        BLOCK 2: END;
+        PRINT ['
+'];
+        CELL(0) <= CELL(0) + 3;
+    BLOCK 1: END;
+BLOCK 0: END.
