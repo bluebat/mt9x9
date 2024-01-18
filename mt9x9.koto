@@ -1,0 +1,17 @@
+#!/usr/bin/koto
+#-
+9x9 multiplication table in Koto
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+-#
+# koto mt9x9.koto
+
+@main = ||
+    for i in (0..3).each |n| n*3+1
+        for j in 1..=9
+            s = ""
+            for k in [i, i+1, i+2]
+                s += "${k}x${j}="
+                s += "${if k*j<10 then ' ' else ''}"
+                s += "${k*j}\t"
+            print s
+        print ""

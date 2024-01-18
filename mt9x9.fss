@@ -1,0 +1,22 @@
+(*
+9x9 multiplication table in Fortress
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+*)
+(* fortress mt9x9.fss *)
+
+component mt9x9
+    export Executable
+    run() = for i <- seq(1:9:3) do
+        for j <- seq(1#9) do
+            var k: ZZ32 = i
+            while k <= i+2 do
+                print k "x" j "="
+                print (if (k j) < 10 then " " else "")
+                print (k j) "\t"
+                k += 1
+            end
+            print "\n"
+        end
+        println ""
+    end
+end
