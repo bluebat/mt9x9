@@ -13,7 +13,7 @@ INPUT PROGRAM.
                 IF(#k = #i+1) #s1 = #s.
                 IF(#k = #i+2) #s2 = #s.
             END LOOP.
-            PRINT / #s0(A6) "  " #s1(A6) "  " #s2(A6).
+            PRINT / #s0(A6) "	" #s1(A6) "	" #s2(A6).
         END LOOP.
         PRINT.
     END LOOP.
