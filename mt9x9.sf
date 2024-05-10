@@ -1,0 +1,16 @@
+#!/usr/bin/sidef
+/*
+9x9 multiplication table in Sidef
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+*/
+# ./mt9x9.sf || sidef mt9x9.sf
+
+for (var i = 1; i <= 9; i+=3) {
+    for (1 ..^ 10) { |j|
+        for k in [i, i+1, i+2] {
+            printf("%dx%d=%2d\t", k, j, k*j);
+        }
+        print("\n");
+    }
+    say();
+}
