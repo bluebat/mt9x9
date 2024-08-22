@@ -12,159 +12,159 @@ SET 10
 MVR
 SET 9
 LOB
-  CPR 2
-  MVR 2
-  CPL 2
-  MVR
-  SET 9
-  LOB
     CPR 2
     MVR 2
     CPL 2
-    SET 58
     MVR
-    SET 10
-    MVL 2
+    SET 9
     LOB
-      MVR
-      SUB
-      MVR
-      SUB
-      MVL 2
-      SUB
-    LOE
-    MVR 4
-    SET 3
-    LOB
-      CPR 2
-      MVR 2
-      CPL 2
-      SET 13
-      MVL 9
-      LOB
-        MVR
-        ADD
-        MVR 8
-        SUB
-        MVL 9
-        SUB
-      LOE
-      MVR
-      CPL 1
-      MVR 7
-      LOB
-        MVR
-        SUB
-        MVL
-        SUB
-      LOE
-      MVR
-      CPR 2
-      MVR 2
-      CPL 2
-      SET 48
-      MVL
-      LOB
-        MVR
-        ADD
-        MVL
-        SUB
-      LOE
-      MVR 2
-      SET
-      MVL 7
-      LOB
-        MVR
-        ADD
-        MVR 3
-        LOB
-          MVR
-          ADD
-          MVR 2
-          ADD
-          MVL 3
-          SUB
-        LOE
-        MVR
-        CPL 1
-        MVL 5
-        SUB
-      LOE
-      MVR
-      CPL 1
-      MVR 7
-      SET
-      MVR
-      SET 32
-      MVR
-      SET 48
-      MVR 2
-      SET 10
-      MVL 5
-      LOB
-        MVR 3
-        ADD
-        MVR
-        SET 1
-        MVR
-        SUB
         CPR 2
         MVR 2
         CPL 2
-        MVL
-        LOB
-          MVL 2
-          SUB
-          MVR 2
-          SET
-        LOE
+        SET 58
+        MVR
+        SET 10
         MVL 2
         LOB
-          MVL 2
-          ADD
-          MVL
-          ADD
-          MVR 2
-          SET 48
-          MVR 2
-          SET 10
-          MVL
-          SUB
+            MVR
+            SUB
+            MVR
+            SUB
+            MVL 2
+            SUB
         LOE
-        MVL 4
+        MVR 4
+        SET 3
+        LOB
+            CPR 2
+            MVR 2
+            CPL 2
+            SET 13
+            MVL 9
+            LOB
+                MVR
+                ADD
+                MVR 8
+                SUB
+                MVL 9
+                SUB
+            LOE
+            MVR
+            CPL 1
+            MVR 7
+            LOB
+                MVR
+                SUB
+                MVL
+                SUB
+            LOE
+            MVR
+            CPR 2
+            MVR 2
+            CPL 2
+            SET 48
+            MVL
+            LOB
+                MVR
+                ADD
+                MVL
+                SUB
+            LOE
+            MVR 2
+            SET
+            MVL 7
+            LOB
+                MVR
+                ADD
+                MVR 3
+                LOB
+                    MVR
+                    ADD
+                    MVR 2
+                    ADD
+                    MVL 3
+                    SUB
+                LOE
+                MVR
+                CPL 1
+                MVL 5
+                SUB
+            LOE
+            MVR
+            CPL 1
+            MVR 7
+            SET
+            MVR
+            SET 32
+            MVR
+            SET 48
+            MVR 2
+            SET 10
+            MVL 5
+            LOB
+                MVR 3
+                ADD
+                MVR
+                SET 1
+                MVR
+                SUB
+                CPR 2
+                MVR 2
+                CPL 2
+                MVL
+                LOB
+                    MVL 2
+                    SUB
+                    MVR 2
+                    SET
+                LOE
+                MVL 2
+                LOB
+                    MVL 2
+                    ADD
+                    MVL
+                    ADD
+                    MVR 2
+                    SET 48
+                    MVR 2
+                    SET 10
+                    MVL
+                    SUB
+                LOE
+                MVL 4
+                SUB
+            LOE
+            MVR
+            LOB
+                MVR
+                ADD 16
+                MVL
+                SET
+            LOE
+            MVL 2
+            PUT
+            MVL 16
+            PUT
+            MVR 9
+            PUT
+            MVL 8
+            PUT
+            MVR 18
+            PUT
+            MVR
+            PUT
+            MVL 18
+            PUT
+            MVR 10
+            SUB
+        LOE
+        MVL 9
+        PUT
+        MVR 4
         SUB
-      LOE
-      MVR
-      LOB
-        MVR
-        ADD 16
-        MVL
-        SET
-      LOE
-      MVL 2
-      PUT
-      MVL 16
-      PUT
-      MVR 9
-      PUT
-      MVL 8
-      PUT
-      MVR 18
-      PUT
-      MVR
-      PUT
-      MVL 18
-      PUT
-      MVR 10
-      SUB
     LOE
-    MVL 9
+    MVL 4
     PUT
-    MVR 4
-    SUB
-  LOE
-  MVL 4
-  PUT
-  MVR
-  SUB 3
+    MVR
+    SUB 3
 LOE
