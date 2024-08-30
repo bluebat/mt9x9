@@ -1,0 +1,16 @@
+/*
+9x9 multiplication table in DINO
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+*/
+// dinolang mt9x9.dino
+
+for (var i = 1; i <= 9; i += 3) {
+    for (var j = 1; j <= 9; j++) {
+        for (var k = i; k <= i+2; k++) {
+            put (k @ "x" @ j @ "=");
+            put (k*j<10?" ":"", k*j, "\t");
+        }
+        put ("\n");
+    }
+    putln ();
+}
