@@ -1,7 +1,7 @@
 #!/usr/bin/bfi
 9x9 multiplication table in Brainfuck
 [ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024. ]
-[ bfi mt9x9.bf ]
+[ ./mt9x9.bf || bfi mt9x9.bf ]
 
 [-]>++++++++++[<++++++++++++>-]<>>[-]>++++++[<++++++++++>-]<+>>[
 -]+++++++++>>[-]++++++++++>>[-]+++++++++[>>[-]>>[-]<<<<[>>+>>+<<

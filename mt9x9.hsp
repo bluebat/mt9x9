@@ -1,0 +1,21 @@
+; 9x9 multiplication table in Hot Soup Processor
+; CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+; hspcmp mt9x9.hsp && hsp3cl mt9x9.ax
+
+#include "hsp3cl.as"
+i=1
+repeat 3
+    j=1
+    repeat 9
+        s=""
+        k=i
+        repeat 3
+            s+=strf("%dx%d=%2d\t",k,j,k*j)
+            k++
+        loop
+        mes s
+        j++
+    loop
+    mes
+    i+=3
+loop

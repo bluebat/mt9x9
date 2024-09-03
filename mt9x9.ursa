@@ -6,9 +6,9 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
 
 let i = 1
 loop {
-    for j of range(9) {
+    for j in range(9) {
         let s = []
-        for k of [i, i+1, i+2].iter() {
+        for k in [i, i+1, i+2].iter() {
             s.push(k)
             s.push("x")
             s.push(j+1)

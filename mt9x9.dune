@@ -1,7 +1,7 @@
 #!/usr/bin/dunesh
 # 9x9 multiplication table in Dune
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
-# dunesh mt9x9.dune
+# ./mt9x9.dune || dunesh mt9x9.dune
 
 for i in [1, 4, 7] {
     for j in 1 to 10 {

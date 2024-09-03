@@ -3,7 +3,7 @@
 9x9 multiplication table in Sage
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
 */
-// sagelang mt9x9.sg
+// ./mt9x9.sg || sagelang mt9x9.sg
 
 for let mut i = 1; i <= 9; i += 3 {
     for let mut j = 1; j <= 9; j += 1 {
