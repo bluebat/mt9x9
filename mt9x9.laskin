@@ -1,0 +1,26 @@
+#!/usr/bin/laskin
+# 9x9 multiplication table in Laskin
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+# ./mt9x9.laskin || laskin mt9x9.laskin
+
+(
+    >string .. "x" ..
+    >string .. "=" ..
+    over over * dup
+    10 < ( " " .. ) if
+    >string .. "\t" ..
+) -> item
+1 dup
+( 9 <= ) (
+    1 dup
+    ( 9 <= ) (
+        over over over item
+        1 + over over item
+        1 + over over item
+        "\n" ..
+        drop 1 + dup
+    ) while
+    "" .
+    drop 3 + dup
+) while
+drop

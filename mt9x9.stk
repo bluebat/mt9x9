@@ -1,0 +1,22 @@
+#!/usr/bin/stack
+# 9x9 multiplication table in Stack
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+# ./mt9x9.stk || stack mt9x9.stk
+
+1 9 3 range (i) (
+    1 (j) var (
+        [ i i 1 add i 2 add ] (k) (
+            k print
+            (x) print
+            j print
+            (=) print
+            (( ) print) (() print) k j mul 10 less if
+            k j mul print
+            (\t) print
+        ) for
+        (\n) print
+        j 1 add (j) var
+    ) (j 10 less) while
+    i 3 add (i) var
+    () println
+) for

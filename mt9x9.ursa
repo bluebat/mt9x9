@@ -4,22 +4,23 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
 */
 // ursa mt9x9.ursa
 
-let i = 1
+let write = process.stdout.write
+var i = 1
 loop {
-    for j in range(9) {
-        let s = []
+    for J in range(9) {
+        let j = J+1
         for k in [i, i+1, i+2].iter() {
-            s.push(k)
-            s.push("x")
-            s.push(j+1)
-            s.push("=")
-            if k*(j+1) < 10 { s.push(" ") }
-            s.push(k*(j+1))
-            s.push("\t")
+            write(k.toString())
+            write("x")
+            write(j.toString())
+            write("=")
+            if (k*j < 10) { write(" ") }
+            write((k*j).toString())
+            write("\t")
         }
-        print(s.join(""))                
+        write("\n")
     }
     print()
     i := i + 3
-    if i > 9 { break }
+    if (i > 9) { break }
 }
