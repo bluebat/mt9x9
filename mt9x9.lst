@@ -1,0 +1,15 @@
+1 // 9x9 multiplication table in COMAL
+2 // CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+3 // opencomal <<< 'enter "mt9x9.lst"'$'\n''run'
+
+10 FOR i# := 1 TO 9 STEP 3 DO
+20     FOR j# := 1 TO 9 DO
+30         FOR k# := i# TO i#+2 DO
+40             PRINT k#; "x"; j#; "=";
+50             PRINT USING "##": k#*j#;
+60             PRINT CHR$(9);
+70         ENDFOR
+80        PRINT CHR$(10);
+90     ENDFOR
+100    PRINT
+110 ENDFOR
