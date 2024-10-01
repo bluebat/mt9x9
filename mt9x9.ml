@@ -11,5 +11,5 @@ for i = 1 to 3 do
         done;
         print_string "\n"
     done;
-    print_newline()
+    print_endline ""
 done;
