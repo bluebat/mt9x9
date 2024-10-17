@@ -1,9 +1,9 @@
-#!/usr/bin/rebol -q
+#!/usr/bin/rebol3 -q
 {
 9x9 multiplication table in REBOL
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 }
-; ./mt9x9.r || rebol -q mt9x9.r
+; ./mt9x9.r || rebol3 -q mt9x9.r
 
 rebol []
 foreach i [1 4 7] [

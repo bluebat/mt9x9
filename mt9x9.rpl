@@ -1,0 +1,21 @@
+/*
+9x9 multiplication table in RPL
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+*/
+/* rpl mt9x9.rpl 2> /dev/null */
+
+MAIN
+<<
+    1 9 for I
+        1 9 for J
+            ""
+            I I 2 + for K
+                K ->str + "x" + J ->str + "=" +
+                K J * if 10 < then " " + end
+                K J * ->str + "\t" +
+            next
+            disp
+        next
+        "" disp
+    3 step
+>>
