@@ -1,0 +1,23 @@
+#!/usr/bin/wa
+/*
+9x9 multiplication table in 凹
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+*/
+// wa run mt9x9.wa
+
+func main {
+    for i := 1; i <= 9; i += 3 {
+        j: int
+        for J := range make([]int, 9) {
+            j = J + 1
+            for k := i; k <= i+2; k++ {
+                print(string(k+48)+"x"+string(j+48)+"=")
+                if k*j < 10 { print(' ') }
+                print(k*j)
+                print('\t')
+            }
+            print('\n')
+        }
+        println()
+    }
+}
