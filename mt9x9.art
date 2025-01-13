@@ -1,0 +1,15 @@
+#!/usr/bin/arturo
+; 9x9 multiplication table in Arturo
+; CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
+; ./mt9x9.art || arturo mt9x9.art
+
+loop 1..9 .step:3 [i] [
+    loop 1..9 [j] [
+        loop @[i i+1 i+2] [k] [
+            prints ~"|k|x|j|="
+            prints (to :string .format:"2d" k*j)++"\t"
+        ]
+        prints "\n"
+    ]
+    print ""
+]

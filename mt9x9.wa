@@ -1,6 +1,6 @@
 #!/usr/bin/wa
 /*
-9x9 multiplication table in 凹
+9x9 multiplication table in Wa(凹)
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
 */
 // wa run mt9x9.wa
