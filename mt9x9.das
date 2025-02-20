@@ -1,5 +1,5 @@
 /*
-9x9 multiplication table in daScript
+9x9 multiplication table in Daslang
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2022.
 */
 // daScript mt9x9.das
