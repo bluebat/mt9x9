@@ -1,0 +1,28 @@
+#!/usr/bin/sunder-run
+# 9x9 multiplication table in Sunder
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2025.
+# sunder-compile -o mt9x9 mt9x9.sunder && ./mt9x9 || sunder-run mt9x9.sunder
+
+import "std";
+func main() void {
+    var i = 1u;
+    for i < 10 {
+        for j in 1:10 {
+            for K in 3 {
+                var k = i + K;
+                var s = k * j;
+                var ss = "";
+                if s < 10 { ss = " "; }
+                std::print_format(std::out(), "{}x{}={}{}\t",
+                    (:[]std::formatter)[
+                        std::formatter::init[[usize]](&k),
+                        std::formatter::init[[usize]](&j),
+                        std::formatter::init[[[]byte]](&ss),
+                        std::formatter::init[[usize]](&s)]);
+            }
+        std::print(std::out(), "\n");
+        }
+    std::print_line(std::out(), "");
+    i += 3;
+    }
+}
