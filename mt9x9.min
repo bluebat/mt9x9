@@ -1,0 +1,23 @@
+#|
+9x9 multiplication table in min
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2025.
+|#
+; min mt9x9.min
+
+1 :i
+(i 9 <=) (
+    1 :j
+    (j 9 <=) (
+        (0 1 2) (
+            i + :k
+            k print! "x" print! j print! "=" print!
+            k j * :s
+            (s 10 <) " " "" if print!
+            s print! 9 chr print!
+        ) foreach
+        10 chr print!
+        j succ @j
+    ) while
+    "" puts!
+    i 3 + @i
+) while

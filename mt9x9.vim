@@ -4,8 +4,8 @@
 
 for i in range(1, 9, 3)
     for j in range(1, 9)
-        for k in [i, i+1, i+2]
-            echon k'x'j'='k*j<10?' ':''k*j"\t"
+        for k in [i, i + 1, i + 2]
+            echon k'x'j'='k * j < 10 ? ' ' : ''k * j"\t"
         endfor
         echon "\n"
     endfor
