@@ -1,0 +1,21 @@
+#!/usr/bin/ferite
+/*
+9x9 multiplication table in Ferite
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2025.
+*/
+// ferite mt9x9.fe
+
+uses "console";
+for (number i = 1; i <= 9; i += 3) {
+    for (number j = 1; j <= 9; j++) {
+        number k = i;
+        while (k <= i+2) {
+            Console.print("${k}x${j}=");
+            if (k*j < 10) Console.print(" ");
+            Console.print("${k*j}\t");
+            k++;
+        }
+        Console.print("\n");
+    }
+    Console.println("");
+}
