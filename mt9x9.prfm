@@ -1,0 +1,16 @@
+#!/usr/bin/perfumesh
+# 9x9 multiplication table in Perfume
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2025.
+# ./mt9x9.prfm || perfumesh mt9x9.prfm
+
+(1 4 7) each do: {| i |
+    1 each to: 9 do: {| j |
+        $i .. [$i + 2] do: {| k |
+            print $k"x"$j"=";
+            if {[$k * $j] < 10} then: {print " "};
+            print [$k * $j]"\t"
+        };
+        print "\n"
+    };
+    println
+};
