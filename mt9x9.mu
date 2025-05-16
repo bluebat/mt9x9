@@ -4,7 +4,6 @@
 // gcc -I/usr/share/muon/examples -o mt9x9 out.c ; ./mt9x9
 
 printf(fmt cstring) int #Foreign("printf") #VarArgs
-
 main() {
     for i := 1; i < 10; i+=3 {
         for j := 1; j <= 9 {
