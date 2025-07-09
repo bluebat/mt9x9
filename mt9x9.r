@@ -1,6 +1,6 @@
 #!/usr/bin/rebol3 -q
 {
-9x9 multiplication table in REBOL
+9x9 multiplication table in Rebol
 CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
 }
 ; ./mt9x9.r || rebol3 -q mt9x9.r
