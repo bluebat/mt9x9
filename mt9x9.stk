@@ -1,7 +1,7 @@
-#!/usr/bin/stack
+#!/usr/bin/stk
 # 9x9 multiplication table in Stack
 # CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2024.
-# ./mt9x9.stk || stack mt9x9.stk
+# ./mt9x9.stk || stk mt9x9.stk
 
 1 9 3 range (i) (
     1 (j) var (
