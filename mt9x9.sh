@@ -1,6 +1,8 @@
 #!/usr/bin/bash
-# 9x9 multiplication table in BASH
-# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+<<COMMENTBLOCK
+9x9 multiplication table in BASH
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2018.
+COMMENTBLOCK
 # ./mt9x9.sh || bash mt9x9.sh
 
 for i in {1..9..3}; do

@@ -5,8 +5,8 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2025.
 ‘ 11l mt9x9.11l && ./mt9x9 ’
 
 L(i) (1.<10).step(3)
-   L(j) 1..9
-      L(k) [i, i+1, i+2]
-         print(f:‘{k}x{j}={k*j:2}’, end' "\t")
-      print(end' "\n")
-   print()
+    L(j) 1..9
+        L(k) [i, i+1, i+2]
+            print(f:‘{k}x{j}={k*j:2}’, end' "\t")
+        print(end' "\n")
+    print()
