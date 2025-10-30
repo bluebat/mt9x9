@@ -1,6 +1,8 @@
 #!/usr/bin/fish
-# 9x9 multiplication table in Fish
-# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+<<COMMENTBLOCK
+9x9 multiplication table in Fish
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2021.
+COMMENTBLOCK
 # ./mt9x9.fish || fish mt9x9.fish
 
 for i in (seq 1 3 9)
