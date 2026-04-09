@@ -7,7 +7,7 @@ CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 val i = ref 1;
 val j = ref 1;
 val k = ref 1;
-while (!i <= 7) do (
+while (!i <= 9) do (
     j := 1;
     while (!j <= 9) do (
         k := !i;

@@ -1,0 +1,24 @@
+#!/usr/bin/gri
+# 9x9 multiplication table in Gri
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
+# ./mt9x9.gri || gri mt9x9.gri
+
+.i. = 1
+while {rpn .i. 9 >=}
+    .j. = 1
+    while {rpn .j. 9 >=}
+        .k. = .i.
+        while {rpn .k. .i. 2 + >=}
+            show .k. "x" .j. "=" ...
+            if {rpn 10 .k. .j. * <}
+                show " " ...
+            end if
+            show {rpn .k. .j. *} "\>>" ...
+            .k. += 1
+        end while
+        show "\<<" ...
+        .j. += 1
+    end while
+    show ""
+    .i. += 3
+end while
