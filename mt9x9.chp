@@ -1,0 +1,24 @@
+// 9x9 multiplication table in Chap
+// CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
+// chap mt9x9.chp
+
+1 -> $i
+@loop_i
+    1 -> $j
+    @loop_j
+        $i -> $k
+        "" -> $s
+        @loop_k
+            $s, $k, "x", $j, "=" -> cat -> $s
+            @if, (($k, $j -> multiply), 10 -> lt) -> jump_if_not
+                $s, " " -> cat -> $s
+            @if
+            $s, ($k, $j -> multiply), "	" -> cat -> $s
+            $k -> inc
+        @loop_k, $k, ($i, 3 -> add) -> jump_if_not_equal
+        $s -> print
+        $j -> inc
+    @loop_j, $j, 10 -> jump_if_not_equal
+    ""
+    $i, 3 -> add -> $i
+@loop_i, $i, 10 -> jump_if_not_equal
