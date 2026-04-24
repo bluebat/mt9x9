@@ -7,7 +7,7 @@ export fn main() void = {
     for (let i = 1z; i <= 9; i += 3) {
         for (let j = 1z; j <= 9; j += 1) {
             for (let k = i; k <= i+2; k += 1) {
-	        fmt::printf("{}x{}={:2}\t", k, j, k*j)!;
+                fmt::printf("{}x{}={:2}\t", k, j, k*j)!;
             };
             fmt::print("\n")!;
         };
