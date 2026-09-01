@@ -1,0 +1,18 @@
+/*
+9x9 multiplication table in Turing+
+CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
+*/
+% tpc mt9x9.t+ && ./mt9x9.x
+
+var i : int := 1
+loop
+    for j: 1 .. 9
+        for k : i .. i + 2
+            put k, "x", j, "=", (k*j):2, "\t" ..
+        end for
+        put ""
+    end for
+    put chr(10) ..
+    i += 3
+    exit when i >= 9
+end loop
