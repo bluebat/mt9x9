@@ -5,7 +5,7 @@
 
 printf(fmt cstring) int #Foreign("printf") #VarArgs
 main() {
-    for i := 1; i < 10; i+=3 {
+    for i := 1; i < 10; i += 3 {
         for j := 1; j <= 9 {
             for k := i; k <= i+2 {
                 printf("%dx%d=%2d\t", k, j, k*j)
