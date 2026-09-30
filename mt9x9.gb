@@ -1,0 +1,20 @@
+#!/usr/bin/goby
+# 9x9 multiplication table in Goby
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
+# ./mt9x9.gb || goby mt9x9.gb
+
+i = 1
+while i <= 9 do
+    9.times do |j|
+        j += 1
+        k = i
+        3.times do
+            print(k.to_s + 'x' + j.to_s + '=')
+            print((k*j).to_s.rjust(2) + "\t")
+            k += 1
+        end
+        print("\n")
+    end
+    puts('')
+    i += 3
+end
