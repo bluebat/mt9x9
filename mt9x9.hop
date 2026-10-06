@@ -1,0 +1,20 @@
+! 9x9 multiplication table in Hope
+! CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
+! hope -f mt9x9.hop
+
+dec item : num X num X num -> list char;
+--- item(i, j, K) <=
+        let k == i+K in
+        let head == num2str(k) <> "x" <> num2str(j) <> "=" in
+        let tail == (if k*j<10 then " " else "") <> num2str(k*j) <> "\t" in
+        head <> tail;
+dec line : num X num X num -> list char;
+--- line(i, j, 3) <= "\n";
+--- line(i, j, K) <= item(i, j, K) <> line(i, j, K+1);
+dec block : num X num -> list char;
+--- block(i, 10) <= "\n";
+--- block(i, j) <= line(i, j, 0) <> block(i, j+1);
+dec main : num -> list char;
+--- main(10) <= "";
+--- main(i) <= block(i, 1) <> main(i+3);
+write main(1);
