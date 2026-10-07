@@ -2,18 +2,16 @@
 ! CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
 ! hope -f mt9x9.hop
 
-dec item : num X num X num -> list char;
---- item(i, j, K) <=
-        let k == i+K in
-        let head == num2str(k) <> "x" <> num2str(j) <> "=" in
-        let tail == (if k*j<10 then " " else "") <> num2str(k*j) <> "\t" in
-        head <> tail;
-dec line : num X num X num -> list char;
---- line(i, j, 3) <= "\n";
---- line(i, j, K) <= item(i, j, K) <> line(i, j, K+1);
-dec block : num X num -> list char;
---- block(i, 10) <= "\n";
---- block(i, j) <= line(i, j, 0) <> block(i, j+1);
+dec item : num # num -> list char;
+--- item(j, k) <=
+        let left == num2str(k) <> "x" <> num2str(j) <> "=" in
+        let right == (if k*j<10 then " " else "") <> num2str(k*j) <> "\t" in
+        left <> right;
+dec line : num # num # num -> list char;
+--- line(i, j, k) <= if k<i+3 then item(j, k) <> line(i, j, k+1) else "\n";
+dec block : num # num -> list char;
+--- block(i, 10) <= [chr(10)];
+--- block(i, j) <= line(i, j, i) <> block(i, j+1);
 dec main : num -> list char;
 --- main(10) <= "";
 --- main(i) <= block(i, 1) <> main(i+3);

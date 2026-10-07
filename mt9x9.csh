@@ -1,8 +1,6 @@
 #!/usr/bin/tcsh
-<<COMMENTBLOCK
-9x9 multiplication table in CSH
-CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
-COMMENTBLOCK
+# 9x9 multiplication table in CSH
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2020.
 # ./mt9x9.csh || tcsh mt9x9.csh
 
 foreach i (1 4 7)
