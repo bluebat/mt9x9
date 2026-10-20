@@ -6,7 +6,7 @@
 import "std";
 func main() void {
     var i = 1u;
-    for i < 10 {
+    for i <= 9 {
         for j in 1:10 {
             for K in 3 {
                 var k = i + K;

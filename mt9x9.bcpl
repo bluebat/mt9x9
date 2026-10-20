@@ -5,7 +5,7 @@
 GET "LIBHDR"
 LET start() BE $(
     LET i = 1
-    WHILE i < 10 DO $(
+    WHILE i <= 9 DO $(
         FOR j = 1 TO 9 DO $(
             FOR k = i TO i+2 DO $(
                 writen(k)

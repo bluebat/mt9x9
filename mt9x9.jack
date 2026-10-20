@@ -8,9 +8,9 @@ class Main {
     function void main() {
         var int i, j, k;
         let i = 1;
-        while(i < 10) {
+        while(i <= 9) {
             let j = 1;
-            while(j < 10) {
+            while(j <= 9) {
                 let k = i;
                 while(k < (i+3)) {
                     do Output.printf("%dx%d=", k, j);

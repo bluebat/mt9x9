@@ -6,7 +6,7 @@
 module mt9x9
 pub fun main()
     var i := 1
-    while{i < 10}
+    while{i <= 9}
         list(1, 9).map fn(j)
             [i, i+1, i+2].foreach fn(k)
                 print(k.show ++ "x" ++ j.show ++ "=")
