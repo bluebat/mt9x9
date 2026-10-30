@@ -1,0 +1,20 @@
+#!/usr/bin/ion
+# 9x9 multiplication table in Ion
+# CC0, Wei-Lun Chao <bluebat@member.fsf.org>, 2026.
+# ./mt9x9.ion || ion mt9x9.ion
+
+let i = 1
+while test $i -le 9
+    for j in {1..=9}
+        for k in $i $((i+1)) $((i+2))
+            echo -sn $k 'x' $j '='
+            if test $((k*j)) -lt 10
+                echo -n ' '
+            end
+            echo -en $((k*j))'\t'
+        end
+        echo -en '\n'
+    end
+    let i += 3
+    echo
+end
